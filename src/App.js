@@ -6,7 +6,7 @@ import { GlobalStyle } from "./Components/GlobalStyle";
 import Cabecalho from "./Components/Cabecalho";
 import Container from "./Components/Container";
 import { BtnTema } from "./Components/UI";
-import SwitcherTema from './Components/SwitchTema'
+import SwitcherTema from './Components/SwitcherTema'
 
 function App() {
   const [tema, setTema] = useState(true)
@@ -20,7 +20,7 @@ function App() {
       <ThemeProvider theme={ tema ? temaClaro : temaEscuro }>
         <GlobalStyle/>
         <BtnTema onClick={toggleTema}>
-          <SwitcherTema/>
+          <SwitcherTema tema={tema}/>
         </BtnTema>
         <Cabecalho />
         <Container />
