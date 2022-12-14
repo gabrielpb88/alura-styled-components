@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import url("");
 
 * {
   box-sizing: border-box;
@@ -31,11 +31,6 @@
 
   background: white;
   color: #41d3be;
-}
-
-.titulo {
-  color: grey;
-  padding: 25px 0;
 }
 
 .cabecalho {
