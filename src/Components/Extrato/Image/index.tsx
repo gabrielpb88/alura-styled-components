@@ -6,8 +6,12 @@ import transporte from '../../../assets/images/transporte.svg';
 import utilidades from '../../../assets/images/utilidades.svg';
 import { IconeTema as Icone } from '../../UI';
 
-const Image = ({ type }) => {
-  const Images = {
+interface Props {
+  type: string;
+}
+const Image = ({ type }: Props) => {
+  // Using Record<string, any> to be possible to use string as index
+  const Images: Record<string, any> = {
     Restaurante: <Icone src={alimentacao} alt="Restaurante" />,
     Saude: <Icone src={saude} alt="Saude" />,
     Transporte: <Icone src={transporte} alt="Transporte" />,
