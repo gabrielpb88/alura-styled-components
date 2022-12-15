@@ -17,7 +17,11 @@ const Header = styled.nav`
   align-items: center;
 `;
 
-const BtnCabecalho = styled.a`
+interface BtnCabecalhoProps {
+  primary?: boolean;
+}
+
+const BtnCabecalho = styled.a<BtnCabecalhoProps>`
   text-align: center;
   border-radius: 3px;
   padding: 5px 20px;
