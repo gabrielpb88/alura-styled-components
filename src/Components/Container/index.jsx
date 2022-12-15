@@ -30,7 +30,7 @@ const Container = () => {
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
         <Conta />
-        <Extrato items={extratoLista} />
+        <Extrato items={extratoLista.updates} />
       </Conteudo>
     </ContainerWrapper>
   );

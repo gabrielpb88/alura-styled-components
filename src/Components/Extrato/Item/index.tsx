@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from '../Image';
+import { ItemExtratoProps } from '../index';
 
 const ItemWrapper = styled.li`
   display: flex;
@@ -24,8 +25,7 @@ const ItemDescription = styled.div`
   }
 `;
 
-export const Item = (props) => {
-  const { type, value, date, from } = props.children;
+export const Item = ({ type, value, date, from }: ItemExtratoProps) => {
   return (
     <ItemWrapper>
       <Image type={type} />
