@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import privado from '../../assets/images/privado.svg';
 import olho_icone from '../../assets/images/olho.svg';
 import dinheiro from '../../assets/images/dinheiro.svg';
-import { Botao, Box, Detalhe, Icone, Saldo } from '../UI';
+import { Botao, Box, Detalhe, IconeTema as Icone, Saldo } from '../UI';
 
 const IconeMargin = styled(Icone)`
   margin-top: 2px;
