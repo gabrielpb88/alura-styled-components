@@ -7,7 +7,7 @@ import { Extrato } from '../Extrato';
 
 import { extratoLista } from '../../info';
 
-const Container = styled.div`
+const ContainerWrapper = styled.div`
   background-color: ${({ theme }) => theme.body};
   min-height: 90vh;
   padding: 0 15vw;
@@ -24,14 +24,16 @@ const Conteudo = styled.section`
   }
 `;
 
-export default () => {
+const Container = () => {
   return (
-    <Container>
+    <ContainerWrapper>
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
         <Conta />
         <Extrato items={extratoLista} />
       </Conteudo>
-    </Container>
+    </ContainerWrapper>
   );
 };
+
+export default Container;

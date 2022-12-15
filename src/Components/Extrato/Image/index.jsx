@@ -6,7 +6,7 @@ import transporte from '../../../assets/images/transporte.svg';
 import utilidades from '../../../assets/images/utilidades.svg';
 import { IconeTema as Icone } from '../../UI';
 
-export default ({ type }) => {
+const Image = ({ type }) => {
   const Images = {
     Restaurante: <Icone src={alimentacao} alt="Restaurante" />,
     Saude: <Icone src={saude} alt="Saude" />,
@@ -16,3 +16,5 @@ export default ({ type }) => {
   };
   return Images[type] || Images.default;
 };
+
+export default Image;
