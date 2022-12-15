@@ -6,5 +6,9 @@ import { Icone } from '../UI';
 const claro = <Icone src={ThemeOn} alt="Tema Claro" />;
 const escuro = <Icone src={ThemeOff} alt="Tema Escuro" />;
 
-const ThemeSwitcher = ({ tema }) => (tema ? escuro : claro);
+interface Props {
+  tema: boolean;
+}
+
+const ThemeSwitcher = ({ tema }: Props) => (tema ? escuro : claro);
 export default ThemeSwitcher;
