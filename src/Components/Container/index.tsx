@@ -6,6 +6,7 @@ import Conta from '../Conta';
 import { Extrato } from '../Extrato';
 
 import { extratoLista } from '../../info';
+import { ItemExtrato } from '../Extrato/Item';
 
 const ContainerWrapper = styled.div`
   background-color: ${({ theme }) => theme.body};
@@ -25,12 +26,13 @@ const Conteudo = styled.section`
 `;
 
 const Container = () => {
+  const data: ItemExtrato[] = [...extratoLista.updates];
   return (
     <ContainerWrapper>
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
         <Conta />
-        <Extrato items={extratoLista.updates} />
+        <Extrato items={data} />
       </Conteudo>
     </ContainerWrapper>
   );
